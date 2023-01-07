@@ -39,7 +39,7 @@ setInterval(() => {
 }, 100);
 
 //Added Add Button for Smartphones
-document.querySelector(".input").addEventListener("click",workOnSmartphone);
+document.querySelector(".plus").addEventListener("click",workOnSmartphone);
 function workOnSmartphone(){
         if(taskName !== ""){
             taskName = document.querySelector(".addToDo").value;
