@@ -1,5 +1,14 @@
-.bgcolor{
-    background-color: yellow;
+.input > input{
+    width: 80vw;
+    height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin:auto;
+}
+.todolist{
+    display: flex;
+    flex-direction: column;
 }
 .task{
     width: 80vw;
@@ -7,4 +16,12 @@
     margin: 10px auto;
     background-color: rgb(186, 185, 185);
     font-size: 2rem;
+    opacity: 1;
+}
+.lowerOpacity{
+    transition: all 0.3s;
+    opacity: 0;
+}
+.hide{
+    display: none;
 }
