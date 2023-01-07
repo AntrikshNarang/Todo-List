@@ -34,6 +34,9 @@ function taskCompleted(){
         currentElement.classList.add("lowerOpacity");
         setTimeout(function(){currentElement.classList.add("hide");},300);
 }
+setInterval(() => {
+    taskName = document.querySelector(".addToDo").value;
+}, 100);
 
 //Added Add Button for Smartphones
 document.querySelector(".input").addEventListener("click",workOnSmartphone);
