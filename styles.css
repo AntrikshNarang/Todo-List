@@ -1,0 +1,10 @@
+.bgcolor{
+    background-color: yellow;
+}
+.task{
+    width: 80vw;
+    height: 50px;
+    margin: 10px auto;
+    background-color: rgb(186, 185, 185);
+    font-size: 2rem;
+}
