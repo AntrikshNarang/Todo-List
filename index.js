@@ -36,7 +36,7 @@ function taskCompleted(){
 }
 
 //Added Add Button for Smartphones
-document.querySelector(".input img").addEventListener("click",workOnSmartphone);
+document.querySelector(".input").addEventListener("click",workOnSmartphone);
 function workOnSmartphone(){
         if(taskName !== ""){
             taskName = document.querySelector(".addToDo").value;
