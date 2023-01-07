@@ -1,14 +1,29 @@
-.input > input{
+.input{
     width: 80vw;
     height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.input > input{
+    width: 90%;
     font-size: 2rem;
     text-align: center;
-    display: block;
-    margin:auto;
+    border: none;
+    background: none;
+    outline: none;
+    /* display: block; */
+    /* margin:auto; */
 }
 .todolist{
     display: flex;
     flex-direction: column;
+}
+.plus{
+    height: 50%;
+    margin-right: 20px;
 }
 .task{
     width: 80vw;

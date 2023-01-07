@@ -16,9 +16,9 @@ if(event.key === "Enter"){
         document.querySelector(".addToDo").value="";
         resetEventListeners();
     }
-    // document.querySelector(".addToDo").blur();
-
 }
+
+
 }
 function resetEventListeners(){
 
@@ -33,4 +33,16 @@ function taskCompleted(){
         currentElement=this;
         currentElement.classList.add("lowerOpacity");
         setTimeout(function(){currentElement.classList.add("hide");},300);
+}
+
+//Added Add Button for Smartphones
+document.querySelector(".input img").addEventListener("click",workOnSmartphone);
+function workOnSmartphone(){
+        if(taskName !== ""){
+            taskName = document.querySelector(".addToDo").value;
+            document.querySelector(".todolist").insertAdjacentHTML("afterbegin","<div>" +taskName+ "</div>");
+            document.querySelector(".todolist div").classList.add("task");
+            document.querySelector(".addToDo").value="";
+            resetEventListeners();
+        }
 }
